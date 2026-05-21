@@ -9,6 +9,23 @@
     <meta property="og:description" content="Turn coding-agent saved time, direct cost, and approval notes into a plain ROI case for teams.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://ivelly42.github.io/ai-agent-roi-calculator-template/">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Agent Ops Command Center Team License",
+        "description": "AI-agent ROI calculator and Notion/spreadsheet template pack for Codex, Claude Code, Cursor, and local-agent teams.",
+        "url": "https://ivelly42.github.io/ai-agent-roi-calculator-template/",
+        "offers": {
+          "@type": "Offer",
+          "name": "Team license - 7 seats",
+          "price": "203",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/PreOrder",
+          "url": "https://github.com/ivelly42/agent-ops-command-center/issues/new"
+        }
+      }
+    </script>
     <style>
       :root {
         color-scheme: light;
@@ -198,6 +215,25 @@
         line-height: 1.45;
       }
 
+      .request {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(260px, 0.65fr);
+        gap: 18px;
+        align-items: start;
+      }
+
+      textarea {
+        width: 100%;
+        min-height: 300px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: #fffdfa;
+        color: var(--ink);
+        padding: 16px;
+        resize: vertical;
+        font: 14px/1.45 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      }
+
       footer {
         border-top: 1px solid var(--line);
         padding: 28px 0 40px;
@@ -215,7 +251,8 @@
 
         .hero,
         .grid,
-        .fields {
+        .fields,
+        .request {
           grid-template-columns: 1fr;
         }
 
@@ -258,7 +295,7 @@
           <h1>AI agent ROI calculator template for approval-ready teams.</h1>
           <p class="lead">A public discovery mirror for Agent Ops Command Center, built for teams that need Codex, Claude Code, Cursor, and local-agent saved time translated into a simple dollar case.</p>
           <div class="actions">
-            <a class="button primary" href="https://ivelly42.github.io/agent-ops-command-center/team-checkout-request.html">Fast $203 team request</a>
+            <a class="button primary" id="directRequest" href="https://github.com/ivelly42/agent-ops-command-center/issues/new">Open $203 request</a>
             <a class="button" href="https://ivelly42.github.io/agent-ops-command-center/roi-calculator.html">Open live calculator</a>
             <a class="button" href="ROI_CALCULATOR_TEMPLATE.md">Copy template</a>
           </div>
@@ -301,6 +338,20 @@ monthly_net_value = monthly_value_saved - monthly_direct_cost</pre>
       </section>
 
       <section>
+        <h2>Fast Team Request</h2>
+        <div class="request">
+          <textarea id="requestBody" readonly></textarea>
+          <div class="notice">
+            This request records purchase intent only. The private paid ZIP should be delivered only after checkout, receipt, payout, or seller-dashboard proof exists.
+            <div class="actions">
+              <a class="button primary" id="directRequestBottom" href="https://github.com/ivelly42/agent-ops-command-center/issues/new">Open $203 request</a>
+              <a class="button" href="https://ivelly42.github.io/agent-ops-command-center/revenue-proof.html">Revenue rule</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
         <h2>Revenue Rule</h2>
         <div class="notice">
           Revenue is not counted from this repository, page views, stars, discussions, order intent, or preview downloads. Revenue is proven only by checkout, receipt, payout, or seller-dashboard evidence tied to the paid template pack.
@@ -311,5 +362,38 @@ monthly_net_value = monthly_value_saved - monthly_direct_cost</pre>
     <footer>
       Paid ZIP is not stored in this mirror. Main product: <a href="https://ivelly42.github.io/agent-ops-command-center/">Agent Ops Command Center</a>.
     </footer>
+    <script>
+      const body = [
+        "Fast team checkout request: Agent Ops Command Center ROI calculator",
+        "",
+        "Request package: Team license - 7 seats - $203 gross",
+        "Purchase intent: Ready to pay $203 for the team license when checkout is ready",
+        "ROI reason: Need a shared AI-agent ROI calculator, cost tracker, run log, and verification ledger for Codex, Claude Code, Cursor, and local-agent work",
+        "Preferred checkout: Receipt-capable checkout",
+        "Receipt need: Receipt needed after payment",
+        "Current blocker: Waiting for checkout link",
+        "",
+        "Preview inspected:",
+        "- ROI mirror: https://ivelly42.github.io/ai-agent-roi-calculator-template/",
+        "- Live ROI calculator: https://ivelly42.github.io/agent-ops-command-center/roi-calculator.html",
+        "- Buy page: https://ivelly42.github.io/agent-ops-command-center/buy.html",
+        "- Fast team request: https://ivelly42.github.io/agent-ops-command-center/team-checkout-request.html",
+        "- Catalog: https://ivelly42.github.io/agent-ops-command-center/catalog.json",
+        "",
+        "Acknowledgement:",
+        "- I understand this issue is purchase intent only.",
+        "- I understand the private paid ZIP should be delivered only after checkout, receipt, payout, or seller-dashboard proof exists.",
+        "- I understand gross revenue is counted only when payment proof exists."
+      ].join("\\n");
+
+      const title = "Fast team checkout request: ROI calculator team license";
+      const url = new URL("https://github.com/ivelly42/agent-ops-command-center/issues/new");
+      url.searchParams.set("title", title);
+      url.searchParams.set("body", body);
+
+      document.getElementById("requestBody").value = body;
+      document.getElementById("directRequest").href = url.toString();
+      document.getElementById("directRequestBottom").href = url.toString();
+    </script>
   </body>
 </html>

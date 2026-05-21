@@ -6,6 +6,7 @@
   "team_license_price_usd": 203,
   "target_revenue_usd": 200,
   "roi_calculator": "https://ivelly42.github.io/agent-ops-command-center/roi-calculator.html",
+  "roi_mirror_direct_request": "https://ivelly42.github.io/ai-agent-roi-calculator-template/",
   "cost_leak_audit": "https://ivelly42.github.io/agent-ops-command-center/cost-leak-audit.html",
   "cost_tracker_page": "https://ivelly42.github.io/agent-ops-command-center/cost-tracker-template.md",
   "fast_team_checkout_request": "https://ivelly42.github.io/agent-ops-command-center/team-checkout-request.html",

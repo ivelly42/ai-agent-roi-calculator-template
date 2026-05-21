@@ -7,6 +7,7 @@ This repository is a search and routing surface. The paid ZIP is not stored here
 ## Main Links
 
 - Interactive ROI calculator: https://ivelly42.github.io/agent-ops-command-center/roi-calculator.html
+- Direct $203 team request: https://ivelly42.github.io/ai-agent-roi-calculator-template/
 - Cost leak audit: https://ivelly42.github.io/agent-ops-command-center/cost-leak-audit.html
 - Cost tracker page: https://ivelly42.github.io/agent-ops-command-center/cost-tracker-template.md
 - Fast $203 team request: https://ivelly42.github.io/agent-ops-command-center/team-checkout-request.html
@@ -67,6 +68,8 @@ monthly_net_value = 450 - 0 = $450
 Open the fast team request:
 
 https://ivelly42.github.io/agent-ops-command-center/team-checkout-request.html
+
+The mirror homepage also opens a prefilled team-license request directly from the ROI calculator context.
 
 ## What The Full Pack Adds
 
